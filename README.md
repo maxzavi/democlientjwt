@@ -20,11 +20,6 @@ http://localhost:8080/swagger-ui/index.html
 mvn spring-boot:run
 ```
 
-## Run
-
-```bash
-java -jar target/democlientjwt-0.0.1-SNAPSHOT.jar
-
 ## Environment variables
 
 Add file application.yml in src/main/resources folder:
