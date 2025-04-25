@@ -5,6 +5,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpStatusCodeException;
+
+import io.swagger.v3.oas.annotations.tags.Tag;
 import pe.maxz.democlientjwt.entity.Login;
 import pe.maxz.democlientjwt.repository.AuthRepository;
 
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/api/auth")
+@Tag(name = "Auth", description = "Authentication API")
+
 public class AuthController {
 
     @Autowired

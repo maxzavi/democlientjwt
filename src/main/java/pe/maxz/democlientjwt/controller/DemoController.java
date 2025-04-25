@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import pe.maxz.democlientjwt.repository.AuthRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 @RestController
 @RequestMapping("/api/demo")
+@Tag(name = "Demo", description = "Demo JWT API")
+
 public class DemoController {
     @Autowired
     private AuthRepository authRepository;
