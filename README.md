@@ -17,9 +17,13 @@ http://localhost:8080/swagger-ui/index.html
 ## Build and run
 
 ```bash
-mvn clean install
-java -jar target/democlientjwt-0.0.1-SNAPSHOT.jar
+mvn spring-boot:run
 ```
+
+## Run
+
+```bash
+java -jar target/democlientjwt-0.0.1-SNAPSHOT.jar
 
 ## Environment variables
 

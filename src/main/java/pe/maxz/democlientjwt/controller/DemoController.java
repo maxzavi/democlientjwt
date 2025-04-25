@@ -4,8 +4,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException;
 
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import pe.maxz.democlientjwt.repository.AuthRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +20,6 @@ public class DemoController {
     @Autowired
     private AuthRepository authRepository;
     @GetMapping("/")
-        @Operation(security = @SecurityRequirement(name = "jwt"))
-
     public ResponseEntity<Object> getDemo(@RequestHeader(value = "Authorization", required = false) String token){
         int codOption=   1;
         try {
